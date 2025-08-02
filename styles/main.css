@@ -147,6 +147,13 @@ li{
 
 }
 
+.card--education-history{
+
+    margin-top: 3em;
+    margin-bottom: 3em;
+    padding-left: 2em;
+}
+
 .card--work-history{
 
     margin-top: 3em;
@@ -218,6 +225,11 @@ li{
 
     #wrapper--hero{
         flex-direction: column;
+    }
+
+    .card--education-history{
+        border-left: none;
+        padding-left: 0;
     }
 
     .card--work-history{
