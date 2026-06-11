@@ -10,11 +10,8 @@ Array.from(themes).forEach((theme) => {
 });
 
 function getThemeOnLoad() {
-    const theme = localStorage.getItem("theme");
-
-    if (theme) {
-        document.querySelector("body").setAttribute("data-theme", theme);
-    }
+    const theme = localStorage.getItem("theme") || "dark";
+    document.querySelector("body").setAttribute("data-theme", theme);
 }
 
 getThemeOnLoad();
